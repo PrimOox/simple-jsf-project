@@ -1,0 +1,21 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:p="http://primefaces.org/ui">
+
+	<nav class="aw-menu">
+
+		<h:form id="frm" class="noselect">
+			<p:menu toggleable="true">
+				<p:submenu class="fa  fa-fw fa-user" label="Cadastros">
+					<p:menuitem value="Produtos" outcome="cadastro-produtos.xhtml" update="content" icon="fa fa-th-large" />
+				</p:submenu>
+				<p:submenu label="Financeiro" class="fa  fa-fw  fa-university">
+					<p:menuitem value="Registro de Vendas" outcome="registrar-venda.xhtml" update="content" icon="fa fa-money" />
+				</p:submenu>
+			</p:menu>
+		</h:form>
+
+	</nav>
+
+</ui:composition>
