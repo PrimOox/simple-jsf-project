@@ -1,0 +1,9 @@
+/target/
+/.settings/*
+/.metadata/*
+/bin/*
+*.class
+.classpath
+.project
+.tern-project
+src/main/resources/rebel.xml
