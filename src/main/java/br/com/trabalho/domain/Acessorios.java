@@ -7,6 +7,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 @Entity
 public class Acessorios implements GenericDomain, Serializable {
@@ -17,6 +18,9 @@ public class Acessorios implements GenericDomain, Serializable {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ACESSORIOS_ID")
 	private Long id;
+	
+	@ManyToOne
+	private Modelo modelo;
 
 	@Override
 	public Long getId() {
